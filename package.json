@@ -1,10 +1,11 @@
 {
   "name": "mezmerik-http",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "author": "Mezmerik Group",
   "main": "lib/http.js",
   "license": "MIT",
   "scripts": {
+    "prepublishOnly": "yarn build",
     "build": "NODE_ENV=production webpack --config ./webpack/webpack.config.js",
     "start": "NODE_ENV=development webpack --config ./webpack/webpack.config.js"
   },
