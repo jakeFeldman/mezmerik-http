@@ -1,6 +1,8 @@
 # @mezmerik/http
 
-A JavaScript http request utility
+A chaining JavaScript http request utility
+
+* Currently only accepts json responses
 
 ## Getting Started
 
@@ -10,27 +12,44 @@ Install @mezmerik/http
 
 Clone the repository
 
-with npm
-
 ```bash
+# with npm
 npm install @mezmerik/http
-```
 
-with yarn
-
-```bash
+# with yarn
 yarn add @mezmerik/http
 ```
 
-Start the dev server
+## Usage
 
-```bash
-yarn start
+```js
+// With Babel
+import http from '@mezmerik/http';
+
+// GET
+const response = await http('http://testurl.com/', options = {})
+    .acceptJson()
+    .request()
+
+// POST
+const response = await http('http://testurl.com/', options = {})
+    .withJsonBody({
+        // some json body
+    })
+    .acceptJson()
+    .post()
+    .request()
+
+// PATCH
+const response = await http('http://testurl.com/', options = {})
+    .withJsonBody({
+        // some json body
+    })
+    .acceptJson()
+    .patch()
+    .request()
+
 ```
-
-## Deployment
-
-Up to you
 
 ## Built With
 

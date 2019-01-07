@@ -47,6 +47,10 @@ class HttpRequest {
         return this;
     }
 
+    accept (type) {
+
+    }
+
     del () {
         this.options.method = 'DELETE';
         return this;
@@ -68,7 +72,6 @@ class HttpRequest {
     }
 
     request () {
-        this.acceptJson();
         let promise = fetch(this.url, this.options);
         let abort = promise.abort;
         promise = promise
