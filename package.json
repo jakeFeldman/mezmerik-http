@@ -1,6 +1,6 @@
 {
   "name": "@mezmerik/http",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Mezmerik Group",
   "main": "lib/http.js",
   "license": "MIT",
