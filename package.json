@@ -1,5 +1,5 @@
 {
-  "name": "mezmerik-http",
+  "name": "@mezmerik/http",
   "version": "0.0.2",
   "author": "Mezmerik Group",
   "main": "lib/http.js",
