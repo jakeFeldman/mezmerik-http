@@ -21,7 +21,6 @@
     "webpack-cli": "^3.2.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.2.5",
     "whatwg-fetch": "^3.0.0"
   }
 }
