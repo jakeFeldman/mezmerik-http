@@ -47,10 +47,6 @@ class HttpRequest {
         return this;
     }
 
-    accept (type) {
-
-    }
-
     del () {
         this.options.method = 'DELETE';
         return this;
